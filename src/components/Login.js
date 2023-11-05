@@ -7,13 +7,11 @@ import {
 import Header from "./Header";
 import { checkValidateData } from "../utilis/validate";
 import { auth } from "../utilis/firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utilis/userSlice";
+import { USER_AVATAR } from "../utilis/constants";
 
 const Login = () => {
-  const navigate = useNavigate();
-
   const [isSignInForm, setIsSigninForm] = useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
   const name = useRef(null);
@@ -38,11 +36,10 @@ const Login = () => {
         password.current.value
       )
         .then((userCredential) => {
-          // Signed up
           const user = userCredential.user;
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL: "https://avatars.githubusercontent.com/u/109808124?v=4",
+            photoURL: USER_AVATAR,
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
@@ -54,7 +51,6 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-              navigate("/browse");
             })
             .catch((error) => {
               setErrorMessage(error.message);
@@ -76,10 +72,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          navigate("/browse");
-
-          console.log(user);
-          // ...
         })
         .catch((error) => {
           const errorCode = error.code;

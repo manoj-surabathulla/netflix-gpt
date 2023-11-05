@@ -28,6 +28,13 @@
 - Create SignUp user Account
 - Create Sign In User Account
 - Implemented Redux toolkit
+- Fetch TMDB Movie API
+- Unsubscribe the onAuthStateChanged callBack
+- Create constants file and keep all the hard coded strings
+- "why api calls will render twice because of React.StrictMode only in local will render twice."
+- created custom hook.
+- \*className: "aspect-video" is used to set the video ratio
+- for background video we need to take iFrame and to autoplay u need to provide after the key "?autoplay=1&mute=1" then it will work
 
 # Features
 
