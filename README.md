@@ -35,6 +35,9 @@
 - created custom hook.
 - \*className: "aspect-video" is used to set the video ratio
 - For background video we need to take iFrame and to autoplay u need to provide after the key "?autoplay=1&mute=1" then it will work
+- GPT search filter
+- Created Multi-Language in our application
+- \*Every State we are storing by using redux toolkit. "because it is used for data layer"
 
 # Features
 

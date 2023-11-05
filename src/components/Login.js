@@ -9,7 +9,7 @@ import { checkValidateData } from "../utilis/validate";
 import { auth } from "../utilis/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utilis/userSlice";
-import { USER_AVATAR } from "../utilis/constants";
+import { BG_URL, USER_AVATAR } from "../utilis/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSigninForm] = useState(false);
@@ -84,10 +84,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/ab4b0b22-2ddf-4d48-ae88-c201ae0267e2/0efe6360-4f6d-4b10-beb6-81e0762cfe81/IN-en-20231030-popsignuptwoweeks-perspective_alpha_website_large.jpg"
-          alt="bg"
-        />
+        <img src={BG_URL} alt="bg" />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
