@@ -43,6 +43,7 @@
 - Login to the platform-openApi
 - Go to personal and click API key and generate the key ("https://platform.openai.com/api-keys")
 - \*Promise.all() - read about this topic
+- if u don't want to call your api continuously... in initial state if it is null then the page as to load if state has data it should not load then u can mention in the \* useEffect(()=> {!popularMovies && getMovies()},[])
 
 # Features
 
