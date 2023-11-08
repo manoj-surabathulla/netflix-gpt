@@ -12,6 +12,8 @@
   - Redux-toolkit
     - npm i -D @reduxjs/toolkit
     - npm i react-redux
+  - Open AI
+    - npm i openai
 
 # Steps
 
@@ -38,6 +40,9 @@
 - GPT search filter
 - Created Multi-Language in our application
 - \*Every State we are storing by using redux toolkit. "because it is used for data layer"
+- Login to the platform-openApi
+- Go to personal and click API key and generate the key ("https://platform.openai.com/api-keys")
+- \*Promise.all() - read about this topic
 
 # Features
 

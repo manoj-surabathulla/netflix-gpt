@@ -24,3 +24,6 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "hindi", name: "Hindi" },
   { identifier: "spanish", name: "Spanish" },
 ];
+
+export const OPENAI_KEY =
+  "go to openapi and personal apikeys generate the key https://platform.openai.com/api-keys";
