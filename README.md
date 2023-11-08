@@ -38,6 +38,7 @@
 - GPT search filter
 - Created Multi-Language in our application
 - \*Every State we are storing by using redux toolkit. "because it is used for data layer"
+- open api configured
 
 # Features
 
